@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Apostila da API de Integração PNCP</title><style>
-:root{--ink:#182333;--muted:#526177;--line:#d9e2ea;--blue:#185b7a;--paper:#fff;--bg:#f3f6f8}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--bg)}a{color:#125776;text-underline-offset:3px}aside{position:fixed;inset:0 auto 0 0;width:270px;padding:26px 22px;background:#102939;color:white;overflow:auto}aside a{color:#dcecf4;display:block;padding:6px 0;text-decoration:none;font-size:14px}aside h2{color:white;font-size:18px}main{max-width:1350px;margin-left:270px;padding:48px 54px 90px}h1,h2,h3,h4{line-height:1.22;letter-spacing:-.025em;color:#111}h1{font-size:48px;max-width:800px}h2{font-size:31px;margin-top:50px}h3{font-size:23px;margin:24px 0 16px}h4{font-size:18px;margin-top:26px}p{max-width:92ch}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}.lead{font-size:20px;line-height:1.55;max-width:75ch}.meta{color:var(--muted);font-size:14px}.metrics{display:flex;gap:38px;margin:30px 0}.metrics strong{font-size:32px;display:block}.metrics span{font-size:14px;color:var(--muted)}article,.chapterintro,.front{background:white;padding:26px 30px;border:1px solid var(--line);border-radius:6px;margin:22px 0}article:target{outline:3px solid #7dafc6}.endpoint{font-size:14px;overflow-wrap:anywhere;font-family:ui-monospace,Consolas,monospace;color:#223c4d;padding-bottom:15px;border-bottom:1px solid var(--line)}.method{font-weight:800;margin-right:12px;color:#155774}.tablewrap{overflow:auto;margin:15px 0 24px}table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}th,td{border:1px solid var(--line);padding:12px;vertical-align:top;overflow-wrap:anywhere;min-width:100px}th{background:#e7eff4;color:#152e3e;text-align:left;font-weight:650}tr:nth-child(even) td{background:#f8fafb}td:first-child{min-width:145px}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em;overflow-wrap:anywhere}pre{background:#f1f5f7;border:1px solid var(--line);padding:20px;white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.6 ui-monospace,Consolas,monospace}details{margin:15px 0}summary{cursor:pointer;font-weight:650;color:#163e55;padding:8px 0}.source{font-size:13px;color:var(--muted);overflow-wrap:anywhere}.warning{color:#754311;border-left:3px solid #cfa76b;padding-left:14px}.toolbar{margin:24px 0}input{width:100%;padding:13px;border:1px solid #94adbb;border-radius:4px;font-size:15px}button{border:1px solid #7893a1;color:#17384b;background:white;border-radius:4px;padding:9px 14px;cursor:pointer;margin:8px 8px 8px 0}aside input{font-size:13px}.count{font-size:13px;color:#dcecf4}.navgroup{border-top:1px solid #35505e;margin-top:15px;padding-top:10px}.note{font-size:14px;color:var(--muted)}.hidden{display:none!important}.indexlist{columns:2;column-gap:28px}.indexlist a{display:block;break-inside:avoid;padding:5px 0;font-size:14px}.empty{display:none}.badge{font-size:12px;color:#536579;text-transform:uppercase;letter-spacing:.06em}footer{margin-top:60px;color:var(--muted);font-size:13px}@media(max-width:1050px){aside{position:static;width:auto;padding:20px}aside nav{display:flex;flex-wrap:wrap;gap:10px 20px}aside .navgroup{border:0;margin:0;padding:0}main{margin:0;padding:24px}h1{font-size:36px}.metrics{gap:20px;flex-wrap:wrap}}@media print{aside,.toolbar,button{display:none!important}main{margin:0;padding:0;max-width:none}body{background:white;font-size:10pt}article,.chapterintro,.front{border:0;padding:0;margin:20px 0}h1{font-size:30pt}h2{page-break-before:always;font-size:22pt}h3,h4,summary{break-after:avoid}tr{break-inside:avoid}table{font-size:8.5pt}a{color:black}.hidden{display:block!important}pre{font-size:8pt}details>*{display:block!important}}
+:root{--ink:#182333;--muted:#526177;--line:#d9e2ea;--blue:#185b7a;--paper:#fff;--bg:#f3f6f8}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--bg)}a{color:#125776;text-underline-offset:3px}aside{position:fixed;inset:0 auto 0 0;width:270px;padding:26px 22px;background:#102939;color:white;overflow:auto}aside a{color:#dcecf4;display:block;padding:6px 0;text-decoration:none;font-size:14px}aside h2{color:white;font-size:18px}main{max-width:1350px;margin-left:270px;padding:48px 54px 90px}h1,h2,h3,h4{line-height:1.22;letter-spacing:-.025em;color:#111}h1{font-size:48px;max-width:800px}h2{font-size:31px;margin-top:50px}h3{font-size:23px;margin:24px 0 16px}h4{font-size:18px;margin-top:26px}p{max-width:92ch}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}.lead{font-size:20px;line-height:1.55;max-width:75ch}.meta{color:var(--muted);font-size:14px}.metrics{display:flex;gap:38px;margin:30px 0}.metrics strong{font-size:32px;display:block}.metrics span{font-size:14px;color:var(--muted)}article,.chapterintro,.front{background:white;padding:26px 30px;border:1px solid var(--line);border-radius:6px;margin:22px 0}article:target{outline:3px solid #7dafc6}.endpoint{font-size:14px;overflow-wrap:anywhere;font-family:ui-monospace,Consolas,monospace;color:#223c4d;padding-bottom:15px;border-bottom:1px solid var(--line)}.method{font-weight:800;margin-right:12px;color:#155774}.tablewrap{overflow:auto;margin:15px 0 24px}table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}th,td{border:1px solid var(--line);padding:12px;vertical-align:top;overflow-wrap:anywhere;min-width:100px}th{background:#e7eff4;color:#152e3e;text-align:left;font-weight:650}tr:nth-child(even) td{background:#f8fafb}td:first-child{min-width:145px}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em;overflow-wrap:anywhere}pre{background:#f1f5f7;border:1px solid var(--line);padding:20px;white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.6 ui-monospace,Consolas,monospace}details{margin:15px 0}summary{cursor:pointer;font-weight:650;color:#163e55;padding:8px 0}.source{font-size:13px;color:var(--muted);overflow-wrap:anywhere}.warning{color:#754311;border-left:3px solid #cfa76b;padding-left:14px}.toolbar{margin:24px 0}input{width:100%;padding:13px;border:1px solid #94adbb;border-radius:4px;font-size:15px}button{border:1px solid #7893a1;color:#17384b;background:white;border-radius:4px;padding:9px 14px;cursor:pointer;margin:8px 8px 8px 0}aside input{font-size:13px}.count{font-size:13px;color:#dcecf4}.navgroup{border-top:1px solid #35505e;margin-top:15px;padding-top:10px}.note{font-size:14px;color:var(--muted)}.hidden{display:none!important}#search-results{display:none}body.searching #search-results{display:block}body.searching main>:not(#search-results){display:none}#search-results h2{margin:0 0 22px;font-size:32px;font-weight:700}#search-status{margin:0;color:#1c1c1c;font-size:16px;max-width:none}#search-list{margin-top:18px}.search-hit{background:none;border:0;border-radius:0;border-top:1px solid #e6e6e6;margin:0;padding:20px 0 18px}.search-hit a{color:#1a6ca8;font-size:18px;font-weight:650;text-decoration:none;overflow-wrap:anywhere}.search-hit a:hover{text-decoration:underline}.search-hit a:visited{color:#6b4c9a}.search-hit p{margin:6px 0 0;color:#222;font-size:15px;line-height:1.5;max-width:none}.indexlist{columns:2;column-gap:28px}.indexlist a{display:block;break-inside:avoid;padding:5px 0;font-size:14px}.empty{display:none}.badge{font-size:12px;color:#536579;text-transform:uppercase;letter-spacing:.06em}footer{margin-top:60px;color:var(--muted);font-size:13px}@media(max-width:1050px){aside{position:static;width:auto;padding:20px}aside nav{display:flex;flex-wrap:wrap;gap:10px 20px}aside .navgroup{border:0;margin:0;padding:0}main{margin:0;padding:24px}h1{font-size:36px}.metrics{gap:20px;flex-wrap:wrap}}@media print{aside,.toolbar,button{display:none!important}main{margin:0;padding:0;max-width:none}body{background:white;font-size:10pt}article,.chapterintro,.front{border:0;padding:0;margin:20px 0}h1{font-size:30pt}h2{page-break-before:always;font-size:22pt}h3,h4,summary{break-after:avoid}tr{break-inside:avoid}table{font-size:8.5pt}a{color:black}#search-results{display:none!important}.hidden{display:block!important}pre{font-size:8pt}details>*{display:block!important}}
 
 .admin-op{background:#fffdf8}.admin-op>.badge{color:#754311}
-</style></head><body><aside><h2>API do PNCP</h2><p class="count">Documentação comentada<br>Manual 2.6 · consulta 08/10/2026</p><label for="search">Buscar nesta apostila</label><input id="search" placeholder="Campo, endpoint ou assunto"><p id="result" class="count" aria-live="polite"></p><nav><a href="#inicio">Como usar</a><a href="#fundamentos">Convenções e autenticação</a><a href="#guia-integracao">Guia de integração</a><a href="#divergencias">Divergências das fontes</a><a class="navgroup" href="#group-Acesso-e-usu-rios">Acesso e usuários</a><a class="navgroup" href="#group-Plano-de-contrata--es-anual">Plano de contratações anual</a><a class="navgroup" href="#group-Inten--o-de-registro-de-pre-os">Intenção de registro de preços</a><a class="navgroup" href="#group-Atas-e-partes-envolvidas">Atas e partes envolvidas</a><a class="navgroup" href="#group-Contrata--es-e-resultados">Contratações e resultados</a><a class="navgroup" href="#group-Contratos">Contratos</a><a class="navgroup" href="#group-Termos-de-contrato">Termos de contrato</a><a class="navgroup" href="#group-Empenhos-vinculados">Empenhos vinculados</a><a class="navgroup" href="#group-Instrumentos-de-cobran-a">Instrumentos de cobrança</a><a class="navgroup" href="#group--rg-os-e-unidades">Órgãos e unidades</a><a class="navgroup" href="#group-Dom-nios-e-conformidades">Domínios e conformidades</a><a class="navgroup" href="#esquemas">Dicionário de esquemas</a><a href="#fontes">Fontes e versão</a></nav></aside><main id="inicio"><div class="eyebrow">Referência para desenvolvimento de integrações</div><h1>Apostila da API de Integração PNCP</h1><p class="lead">Endpoints, requisições, payloads e respostas explicados campo a campo, com observações sobre o significado de cada recurso nas contratações públicas.</p><p class="meta">Manual de Integração 2.6 de 31 de agosto de 2026 · Revisão de obrigatoriedade por operação em 8 de outubro de 2026</p><div class="metrics"><div><strong>214</strong><span>operações no OpenAPI</span></div><div><strong>152</strong><span>esquemas de dados</span></div><div><strong>1.412</strong><span>propriedades nos esquemas</span></div><div><strong>154</strong><span>operações do manual</span></div></div><section class="front"><h3>Como consultar</h3><p>Comece pelo recurso que seu sistema precisa publicar ou consultar. Cada ficha apresenta método, rota, autenticação, parâmetros, corpo e respostas. Os nomes de esquemas são links para o dicionário de campos. A coluna Obrigatório segue o manual da operação: Sim, Não ou Condicional. As diferenças do Swagger ficam em observações separadas.</p><p>As observações explicam o contexto de licitação junto do dado correspondente. As especificações das fontes oficiais e os comentários didáticos aparecem em colunas separadas. Campos com significado não documentado permanecem identificados como tal, sem inventar regras.</p><p>Escopo: API de Integração, base /api/pncp. Este catálogo não pretende cobrir as APIs independentes de consulta, busca do portal ou Compras.gov.br. Cada método HTTP conta como uma operação. Os 1.412 campos são propriedades diretas dos 152 esquemas; não incluem parâmetros de rota, cabeçalhos e estruturas inline, também documentados nas fichas.</p><p>Busque por um nome exato, como sequencialAta, ou por um assunto. A busca filtra fichas e esquemas; os links internos continuam abrindo o conteúdo referenciado. Use o botão de impressão para gerar sua cópia em PDF pelo navegador.</p><div class="toolbar"><button onclick="expandAll(true)">Expandir detalhes</button><button onclick="expandAll(false)">Recolher detalhes</button><button onclick="printBook()">Imprimir ou salvar PDF</button><button onclick="clearSearch()">Limpar busca</button></div></section><section class="front" id="fundamentos"><h2>Convenções de integração</h2><div class="tablewrap"><table><thead><tr><th>Ambiente</th><th>URL base</th></tr></thead><tbody><tr><td>Treinamento e homologação</td><td><code>https://treina.pncp.gov.br/api/pncp</code></td></tr><tr><td>Produção</td><td><code>https://pncp.gov.br/api/pncp</code></td></tr></tbody></table></div><h3>Autenticação e autorização</h3><p>A autenticação usa POST /v1/usuarios/login com as credenciais da plataforma. Leia o JWT no cabeçalho Authorization da resposta, com o prefixo Bearer. O manual informa validade de uma hora. Nas operações protegidas, envie Authorization: Bearer &lt;token&gt;. O corpo documentado pelo Swagger não elimina a necessidade de ler o cabeçalho.</p><p>Credenciamento da plataforma, autorização para o órgão e permissão para uma operação são controles distintos. A existência de uma operação administrativa no Swagger não significa que qualquer plataforma credenciada possa executá-la. As fichas informam o requisito de segurança declarado, sem inferir permissões não documentadas.</p><p>No manual, os procedimentos iniciais de cadastro em treinamento não devem ser aplicados automaticamente à produção. Para produção, consulte a gestão de órgão e entidade. As operações de manutenção de domínios têm perfil administrativo a confirmar no PNCP.</p><h3>Onde cada campo é enviado</h3><div class="tablewrap"><table><thead><tr><th>Local</th><th>Como interpretar</th></tr></thead><tbody><tr><td><code>path</code></td><td>Substitui o marcador entre chaves na rota. Use os identificadores do recurso pai.</td></tr><tr><td><code>query</code></td><td>Parâmetro após ?, usado em filtros e paginação. Não é um campo do JSON.</td></tr><tr><td><code>header</code></td><td>Cabeçalho HTTP, como Authorization ou Titulo-Documento.</td></tr><tr><td><code>application/json</code></td><td>Corpo estruturado em JSON, de acordo com o esquema de envio.</td></tr><tr><td><code>multipart/form-data</code></td><td>Corpo dividido em partes, normalmente arquivo JSON e documento. Use os nomes de partes exatos da operação.</td></tr><tr><td><code>response</code></td><td>Corpo ou cabeçalho retornado. Um campo de consulta não deve ser enviado automaticamente no cadastro.</td></tr></tbody></table></div><h3>Como ler tipos e obrigatoriedade</h3><p>string é texto, integer é número inteiro, number é valor numérico, boolean aceita true ou false e array é uma lista. format date representa uma data; date-time inclui horário. Um $ref aponta para outro esquema. oneOf, anyOf e allOf são composições e não autorização para misturar arbitrariamente campos de modelos diferentes.</p><p>A obrigatoriedade de negócio é lida na tabela de entrada do manual de cada operação: Sim, Não ou Condicional. A condição é preservada ao lado do campo. Inclusão e retificação podem ter regras diferentes. O Swagger complementa a documentação técnica; a ausência de required não apaga uma exigência expressa do manual. Se as fontes não especificarem a regra, isso será indicado sem classificar o campo como opcional. nullable, campo ausente, string vazia e zero são situações diferentes.</p><p>Os nomes e a capitalização dos campos fazem parte do contrato. Os modelos de inclusão, retificação completa, retificação parcial e consulta podem ser diferentes. Em PATCH, confira expressamente o tratamento de campos omitidos e null. Não assuma as regras de JSON Merge Patch sem documentação.</p><p>CNPJ deve permanecer texto. A versão 2.5 do manual já registra a adaptação ao padrão alfanumérico. Sequenciais, números de negócio e números de controle PNCP têm funções diferentes e devem ser armazenados separadamente.</p><h3>Relacionamentos entre os recursos</h3><div class="tablewrap"><table><thead><tr><th>Recurso</th><th>Significado na integração</th></tr></thead><tbody><tr><td>Acesso e usuários</td><td>A plataforma se autentica e atua pelos órgãos para os quais possui autorização. Usuário de API, gestor de órgão e usuário do portal são papéis que exigem atenção às regras de acesso.</td></tr><tr><td>Plano de contratações anual</td><td>O PCA registra necessidades planejadas e estimativas. Publicar uma demanda planejada não significa abrir a licitação, homologar um fornecedor ou assumir uma obrigação contratual.</td></tr><tr><td>Intenção de registro de preços</td><td>A IRP divulga a intenção de realizar registro de preços e permite organizar o interesse de outros órgãos antes da contratação. A publicação da IRP não cria consórcio jurídico nem substitui as regras de participação e gerenciamento.</td></tr><tr><td>Atas e partes envolvidas</td><td>A ata registra condições decorrentes do registro de preços e seus vínculos institucionais. Ata e contrato são registros diferentes. As partes envolvidas identificam os papéis dos órgãos ou unidades nessa ata.</td></tr><tr><td>Contratações e resultados</td><td>A contratação reúne edital, aviso ou ato, seus itens e resultados. A operação de publicação dá publicidade aos dados. O procedimento de propostas e lances continua na plataforma de origem indicada no cadastro.</td></tr><tr><td>Contratos</td><td>O contrato ou instrumento substitutivo formaliza a relação com o fornecedor. Sua origem pode envolver uma contratação e, nos casos de SRP, uma ata. Preserve as chaves do órgão da contratação e do órgão contratante.</td></tr><tr><td>Termos de contrato</td><td>Os termos registram alterações e informações associadas ao contrato. Retificar dados enviados ao PNCP corrige uma publicação. Inserir um termo registra um instrumento efetivamente formalizado.</td></tr><tr><td>Empenhos vinculados</td><td>Este recurso registra empenhos relacionados ao contrato, inclusive vínculos com emendas quando previstos. O empenho representa uma etapa orçamentária e não comprova pagamento.</td></tr><tr><td>Instrumentos de cobrança</td><td>O instrumento de cobrança representa documento de cobrança associado ao contrato, como documento fiscal conforme o domínio. Sua publicação não registra automaticamente liquidação ou pagamento.</td></tr><tr><td>Órgãos e unidades</td><td>O órgão identifica a instituição e a unidade identifica a estrutura administrativa que compra ou executa. As permissões de representação e o cadastro institucional precisam estar coerentes antes da publicação.</td></tr></tbody></table></div><h3>Respostas HTTP e falhas</h3><div class="tablewrap"><table><thead><tr><th>Código</th><th>Leitura operacional</th></tr></thead><tbody><tr><td>200</td><td>Operação concluída conforme o contrato. Verifique o conteúdo e os cabeçalhos retornados.</td></tr><tr><td>201</td><td>Criação concluída, quando declarada. Preserve a localização e os identificadores retornados.</td></tr><tr><td>204</td><td>Sucesso sem corpo. Não dependa de JSON na resposta, mesmo quando a documentação genérica apresenta um modelo.</td></tr><tr><td>400</td><td>Problema na requisição. Leia os detalhes de validação, quando retornados.</td></tr><tr><td>401</td><td>Autenticação ausente ou inválida. Confira o token e sua validade.</td></tr><tr><td>403</td><td>Acesso recusado quando esse status for retornado. Um token válido não garante permissão.</td></tr><tr><td>404</td><td>Recurso não localizado no contexto dos identificadores informados.</td></tr><tr><td>422</td><td>Falha semântica ou de validação do conteúdo. Corrija os dados conforme a mensagem.</td></tr><tr><td>500</td><td>Falha do serviço. Antes de repetir uma criação, confira se o registro foi criado.</td></tr></tbody></table></div><p>Os códigos acima são uma orientação geral. Cada ficha enumera os códigos efetivamente declarados no OpenAPI e, quando disponível, os do manual. Não é declarado um mecanismo universal de idempotência. Como prática de integração, registre a requisição sem segredos, resposta, identificadores, horário e correlação interna; confirme o resultado de uma criação antes de reenviar após timeout.</p><h3>Exemplos de leitura do contrato</h3><p>Os exemplos abaixo são modelos didáticos. Substitua as referências por dados autorizados de treinamento. Não foram executadas operações de escrita no PNCP.</p><pre>POST ${BASE_URL}/v1/usuarios/login
+</style></head><body><aside><h2>API do PNCP</h2><p class="count">Documentação comentada<br>Manual 2.6 · consulta 08/10/2026</p><label for="search">Buscar nesta apostila</label><input id="search" placeholder="Campo, endpoint ou assunto"><p id="result" class="count" aria-live="polite"></p><nav><a href="#inicio">Como usar</a><a href="#fundamentos">Convenções e autenticação</a><a href="#guia-integracao">Guia de integração</a><a href="#divergencias">Divergências das fontes</a><a class="navgroup" href="#group-Acesso-e-usu-rios">Acesso e usuários</a><a class="navgroup" href="#group-Plano-de-contrata--es-anual">Plano de contratações anual</a><a class="navgroup" href="#group-Inten--o-de-registro-de-pre-os">Intenção de registro de preços</a><a class="navgroup" href="#group-Atas-e-partes-envolvidas">Atas e partes envolvidas</a><a class="navgroup" href="#group-Contrata--es-e-resultados">Contratações e resultados</a><a class="navgroup" href="#group-Contratos">Contratos</a><a class="navgroup" href="#group-Termos-de-contrato">Termos de contrato</a><a class="navgroup" href="#group-Empenhos-vinculados">Empenhos vinculados</a><a class="navgroup" href="#group-Instrumentos-de-cobran-a">Instrumentos de cobrança</a><a class="navgroup" href="#group--rg-os-e-unidades">Órgãos e unidades</a><a class="navgroup" href="#group-Dom-nios-e-conformidades">Domínios e conformidades</a><a class="navgroup" href="#esquemas">Dicionário de esquemas</a><a href="#fontes">Fontes e versão</a></nav></aside><main id="inicio"><div id="search-results"><h2>Resultados da Busca</h2><p id="search-status"></p><div id="search-list"></div></div><div class="eyebrow">Referência para desenvolvimento de integrações</div><h1>Apostila da API de Integração PNCP</h1><p class="lead">Endpoints, requisições, payloads e respostas explicados campo a campo, com observações sobre o significado de cada recurso nas contratações públicas.</p><p class="meta">Manual de Integração 2.6 de 31 de agosto de 2026 · Revisão de obrigatoriedade por operação em 8 de outubro de 2026</p><div class="metrics"><div><strong>214</strong><span>operações no OpenAPI</span></div><div><strong>152</strong><span>esquemas de dados</span></div><div><strong>1.412</strong><span>propriedades nos esquemas</span></div><div><strong>154</strong><span>operações do manual</span></div></div><section class="front"><h3>Como consultar</h3><p>Comece pelo recurso que seu sistema precisa publicar ou consultar. Cada ficha apresenta método, rota, autenticação, parâmetros, corpo e respostas. Os nomes de esquemas são links para o dicionário de campos. A coluna Obrigatório segue o manual da operação: Sim, Não ou Condicional. As diferenças do Swagger ficam em observações separadas.</p><p>As observações explicam o contexto de licitação junto do dado correspondente. As especificações das fontes oficiais e os comentários didáticos aparecem em colunas separadas. Campos com significado não documentado permanecem identificados como tal, sem inventar regras.</p><p>Escopo: API de Integração, base /api/pncp. Este catálogo não pretende cobrir as APIs independentes de consulta, busca do portal ou Compras.gov.br. Cada método HTTP conta como uma operação. Os 1.412 campos são propriedades diretas dos 152 esquemas; não incluem parâmetros de rota, cabeçalhos e estruturas inline, também documentados nas fichas.</p><p>Busque por um nome exato, como sequencialAta, ou por um assunto. A busca abre uma lista de resultados com o trecho encontrado; o link leva à ficha. Use o botão de impressão para gerar sua cópia em PDF pelo navegador.</p><div class="toolbar"><button onclick="expandAll(true)">Expandir detalhes</button><button onclick="expandAll(false)">Recolher detalhes</button><button onclick="printBook()">Imprimir ou salvar PDF</button><button onclick="clearSearch()">Limpar busca</button></div></section><section class="front" id="fundamentos"><h2>Convenções de integração</h2><div class="tablewrap"><table><thead><tr><th>Ambiente</th><th>URL base</th></tr></thead><tbody><tr><td>Treinamento e homologação</td><td><code>https://treina.pncp.gov.br/api/pncp</code></td></tr><tr><td>Produção</td><td><code>https://pncp.gov.br/api/pncp</code></td></tr></tbody></table></div><h3>Autenticação e autorização</h3><p>A autenticação usa POST /v1/usuarios/login com as credenciais da plataforma. Leia o JWT no cabeçalho Authorization da resposta, com o prefixo Bearer. O manual informa validade de uma hora. Nas operações protegidas, envie Authorization: Bearer &lt;token&gt;. O corpo documentado pelo Swagger não elimina a necessidade de ler o cabeçalho.</p><p>Credenciamento da plataforma, autorização para o órgão e permissão para uma operação são controles distintos. A existência de uma operação administrativa no Swagger não significa que qualquer plataforma credenciada possa executá-la. As fichas informam o requisito de segurança declarado, sem inferir permissões não documentadas.</p><p>No manual, os procedimentos iniciais de cadastro em treinamento não devem ser aplicados automaticamente à produção. Para produção, consulte a gestão de órgão e entidade. As operações de manutenção de domínios têm perfil administrativo a confirmar no PNCP.</p><h3>Onde cada campo é enviado</h3><div class="tablewrap"><table><thead><tr><th>Local</th><th>Como interpretar</th></tr></thead><tbody><tr><td><code>path</code></td><td>Substitui o marcador entre chaves na rota. Use os identificadores do recurso pai.</td></tr><tr><td><code>query</code></td><td>Parâmetro após ?, usado em filtros e paginação. Não é um campo do JSON.</td></tr><tr><td><code>header</code></td><td>Cabeçalho HTTP, como Authorization ou Titulo-Documento.</td></tr><tr><td><code>application/json</code></td><td>Corpo estruturado em JSON, de acordo com o esquema de envio.</td></tr><tr><td><code>multipart/form-data</code></td><td>Corpo dividido em partes, normalmente arquivo JSON e documento. Use os nomes de partes exatos da operação.</td></tr><tr><td><code>response</code></td><td>Corpo ou cabeçalho retornado. Um campo de consulta não deve ser enviado automaticamente no cadastro.</td></tr></tbody></table></div><h3>Como ler tipos e obrigatoriedade</h3><p>string é texto, integer é número inteiro, number é valor numérico, boolean aceita true ou false e array é uma lista. format date representa uma data; date-time inclui horário. Um $ref aponta para outro esquema. oneOf, anyOf e allOf são composições e não autorização para misturar arbitrariamente campos de modelos diferentes.</p><p>A obrigatoriedade de negócio é lida na tabela de entrada do manual de cada operação: Sim, Não ou Condicional. A condição é preservada ao lado do campo. Inclusão e retificação podem ter regras diferentes. O Swagger complementa a documentação técnica; a ausência de required não apaga uma exigência expressa do manual. Se as fontes não especificarem a regra, isso será indicado sem classificar o campo como opcional. nullable, campo ausente, string vazia e zero são situações diferentes.</p><p>Os nomes e a capitalização dos campos fazem parte do contrato. Os modelos de inclusão, retificação completa, retificação parcial e consulta podem ser diferentes. Em PATCH, confira expressamente o tratamento de campos omitidos e null. Não assuma as regras de JSON Merge Patch sem documentação.</p><p>CNPJ deve permanecer texto. A versão 2.5 do manual já registra a adaptação ao padrão alfanumérico. Sequenciais, números de negócio e números de controle PNCP têm funções diferentes e devem ser armazenados separadamente.</p><h3>Relacionamentos entre os recursos</h3><div class="tablewrap"><table><thead><tr><th>Recurso</th><th>Significado na integração</th></tr></thead><tbody><tr><td>Acesso e usuários</td><td>A plataforma se autentica e atua pelos órgãos para os quais possui autorização. Usuário de API, gestor de órgão e usuário do portal são papéis que exigem atenção às regras de acesso.</td></tr><tr><td>Plano de contratações anual</td><td>O PCA registra necessidades planejadas e estimativas. Publicar uma demanda planejada não significa abrir a licitação, homologar um fornecedor ou assumir uma obrigação contratual.</td></tr><tr><td>Intenção de registro de preços</td><td>A IRP divulga a intenção de realizar registro de preços e permite organizar o interesse de outros órgãos antes da contratação. A publicação da IRP não cria consórcio jurídico nem substitui as regras de participação e gerenciamento.</td></tr><tr><td>Atas e partes envolvidas</td><td>A ata registra condições decorrentes do registro de preços e seus vínculos institucionais. Ata e contrato são registros diferentes. As partes envolvidas identificam os papéis dos órgãos ou unidades nessa ata.</td></tr><tr><td>Contratações e resultados</td><td>A contratação reúne edital, aviso ou ato, seus itens e resultados. A operação de publicação dá publicidade aos dados. O procedimento de propostas e lances continua na plataforma de origem indicada no cadastro.</td></tr><tr><td>Contratos</td><td>O contrato ou instrumento substitutivo formaliza a relação com o fornecedor. Sua origem pode envolver uma contratação e, nos casos de SRP, uma ata. Preserve as chaves do órgão da contratação e do órgão contratante.</td></tr><tr><td>Termos de contrato</td><td>Os termos registram alterações e informações associadas ao contrato. Retificar dados enviados ao PNCP corrige uma publicação. Inserir um termo registra um instrumento efetivamente formalizado.</td></tr><tr><td>Empenhos vinculados</td><td>Este recurso registra empenhos relacionados ao contrato, inclusive vínculos com emendas quando previstos. O empenho representa uma etapa orçamentária e não comprova pagamento.</td></tr><tr><td>Instrumentos de cobrança</td><td>O instrumento de cobrança representa documento de cobrança associado ao contrato, como documento fiscal conforme o domínio. Sua publicação não registra automaticamente liquidação ou pagamento.</td></tr><tr><td>Órgãos e unidades</td><td>O órgão identifica a instituição e a unidade identifica a estrutura administrativa que compra ou executa. As permissões de representação e o cadastro institucional precisam estar coerentes antes da publicação.</td></tr></tbody></table></div><h3>Respostas HTTP e falhas</h3><div class="tablewrap"><table><thead><tr><th>Código</th><th>Leitura operacional</th></tr></thead><tbody><tr><td>200</td><td>Operação concluída conforme o contrato. Verifique o conteúdo e os cabeçalhos retornados.</td></tr><tr><td>201</td><td>Criação concluída, quando declarada. Preserve a localização e os identificadores retornados.</td></tr><tr><td>204</td><td>Sucesso sem corpo. Não dependa de JSON na resposta, mesmo quando a documentação genérica apresenta um modelo.</td></tr><tr><td>400</td><td>Problema na requisição. Leia os detalhes de validação, quando retornados.</td></tr><tr><td>401</td><td>Autenticação ausente ou inválida. Confira o token e sua validade.</td></tr><tr><td>403</td><td>Acesso recusado quando esse status for retornado. Um token válido não garante permissão.</td></tr><tr><td>404</td><td>Recurso não localizado no contexto dos identificadores informados.</td></tr><tr><td>422</td><td>Falha semântica ou de validação do conteúdo. Corrija os dados conforme a mensagem.</td></tr><tr><td>500</td><td>Falha do serviço. Antes de repetir uma criação, confira se o registro foi criado.</td></tr></tbody></table></div><p>Os códigos acima são uma orientação geral. Cada ficha enumera os códigos efetivamente declarados no OpenAPI e, quando disponível, os do manual. Não é declarado um mecanismo universal de idempotência. Como prática de integração, registre a requisição sem segredos, resposta, identificadores, horário e correlação interna; confirme o resultado de uma criação antes de reenviar após timeout.</p><h3>Exemplos de leitura do contrato</h3><p>Os exemplos abaixo são modelos didáticos. Substitua as referências por dados autorizados de treinamento. Não foram executadas operações de escrita no PNCP.</p><pre>POST ${BASE_URL}/v1/usuarios/login
 Content-Type: application/json
 
 {"login":"SEU_LOGIN", "senha":"SUA_SENHA"}
@@ -34591,14 +34591,195 @@ Authorization: Bearer &lt;JWT&gt;</pre><pre>curl -X POST "${BASE_URL}/v1/orgaos/
   }
 }</pre></details></article></section><section class="front" id="fontes"><h2>Fontes e controle de versão</h2><p>As especificações técnicas foram obtidas nas fontes oficiais abaixo em 8 de outubro de 2026. As observações didáticas são comentários de integração, separados das tabelas do manual e das restrições do OpenAPI. As descrições de processos servem para interpretar os campos, sem ampliar o contrato da API.</p><p><a href="https://pncp.gov.br/manual/pt-br/latest/singlehtml/">Manual de Integração PNCP 2.6</a><br><span class="source">https://pncp.gov.br/manual/pt-br/latest/singlehtml/</span></p><p><a href="https://pncp.gov.br/api/pncp/v3/api-docs">OpenAPI da API de Integração em produção</a><br><span class="source">https://pncp.gov.br/api/pncp/v3/api-docs</span></p><p><a href="https://pncp.gov.br/api/pncp/swagger-ui/index.html">Swagger de produção</a><br><span class="source">https://pncp.gov.br/api/pncp/swagger-ui/index.html</span></p><p><a href="https://treina.pncp.gov.br/api/pncp/swagger-ui/index.html">Swagger de treinamento</a><br><span class="source">https://treina.pncp.gov.br/api/pncp/swagger-ui/index.html</span></p><p><a href="https://pncp.gov.br/app/entidades-dominio">Domínios do PNCP</a><br><span class="source">https://pncp.gov.br/app/entidades-dominio</span></p><p>A versão info.version do OpenAPI obtido é 1.0. Ela não deve ser confundida com a versão 2.6 do manual ou com o prefixo /v1 das rotas. A comparação nesta edição não executou requisições de manutenção nem confirmou empiricamente regras não declaradas.</p><p>Para atualizar esta apostila: compare primeiro os métodos e rotas; depois os parâmetros, esquemas e listas required; em seguida as regras condicionais do manual. Revise também permissões, formatos de arquivo e domínios. Preserve as divergências até que a documentação ou os testes em treinamento as resolvam.</p><details><summary>Identificação das fontes desta edição</summary><pre>SHA-256 do OpenAPI: 26c84f916b72dc95d7300a7f97fd99691a2c1d5d355d9d719e968f798717dec6
 SHA-256 do HTML do manual: 46099b87b8fd2a554046a382483b0575ab7d45a237e4d72fa494d6ba3d1975ab</pre></details><p>Revisão da apostila em 2026-10-08: guia de integração, rota recomendada nas divergências, recorte datado dos domínios e retirada de comentário repetido. Os hashes abaixo continuam os das fontes consultadas em 08/10/2026.</p></section><footer>API de Integração PNCP · Apostila comentada · 8 de outubro de 2026</footer></main><script>
-const articles=[...document.querySelectorAll('.searchable')];const input=document.getElementById('search');const result=document.getElementById('result');
-const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-const searchTexts=articles.map(a=>normalize(a.textContent));let timer;
-function filter(){const q=normalize(input.value.trim());let count=0;articles.forEach((a,i)=>{const found=!q||q.split(/\s+/).every(w=>searchTexts[i].includes(w));a.classList.toggle('hidden',!found);if(found)count++});result.textContent=q?count+' fichas e esquemas encontrados':'';}
-input.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(filter,180)});
-function clearSearch(){input.value='';filter()}
-function expandAll(state){document.querySelectorAll('details').forEach(d=>d.open=state)}
-function reveal(){const id=decodeURIComponent(location.hash.slice(1));const target=document.getElementById(id);if(target){target.classList.remove('hidden');for(let p=target.parentElement;p;p=p.parentElement)if(p.tagName==='DETAILS')p.open=true;}}
-window.addEventListener('hashchange',reveal);reveal();
-function printBook(){clearSearch();expandAll(true);window.print()}
+const input=document.getElementById('search');
+const result=document.getElementById('result');
+const statusEl=document.getElementById('search-status');
+const listEl=document.getElementById('search-list');
+let catalog=null;
+let timer=0;
+let searchGen=0;
+
+function fold(value){
+  const out=[];
+  for(const ch of value) out.push(ch.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase());
+  return out.join('');
+}
+function plainText(el,skipBadge){
+  const parts=[];
+  const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{
+    acceptNode(node){
+      const parent=node.parentElement;
+      if(!parent||parent.closest('pre,script,style')) return NodeFilter.FILTER_REJECT;
+      if(skipBadge&&parent.closest('.badge')) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  while(walker.nextNode()) parts.push(walker.currentNode.nodeValue);
+  return parts.join(' ').replace(/\s+/g,' ').trim();
+}
+function entryText(el,skipBadge){
+  if(el.classList.contains('chapter')){
+    const heading=el.querySelector(':scope > h2');
+    const intro=el.querySelector(':scope > .chapterintro > p');
+    return [heading,intro].filter(Boolean).map(node=>plainText(node,skipBadge)).filter(Boolean).join(' ');
+  }
+  return plainText(el,skipBadge);
+}
+function buildCatalog(){
+  if(catalog) return catalog;
+  catalog=[];
+  document.querySelectorAll('main section.front, main section.chapter, main article.searchable').forEach((el,order)=>{
+    const heading=el.querySelector('h2, h3');
+    const title=heading?heading.textContent.replace(/\s+/g,' ').trim():'';
+    if(!title) return;
+    const endpoint=el.querySelector(':scope > .endpoint');
+    const text=entryText(el,true);
+    catalog.push({
+      id:el.id||'inicio',
+      order,
+      title,
+      titleNorm:fold(title),
+      endpointNorm:endpoint?fold(endpoint.textContent):'',
+      text,
+      textNorm:fold(text),
+      searchNorm:fold(entryText(el,false))
+    });
+  });
+  return catalog;
+}
+function normMap(text){
+  const map=[];
+  for(let i=0;i<text.length;i++){
+    const folded=text[i].normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+    for(let k=0;k<folded.length;k++) map.push(i);
+  }
+  map.push(text.length);
+  return map;
+}
+function snippet(text,textNorm,words){
+  let at=-1;
+  for(const word of words){
+    const found=textNorm.indexOf(word);
+    if(found!==-1&&(at===-1||found<at)) at=found;
+  }
+  if(at<0) at=0;
+  const aligned=text.length===textNorm.length;
+  const origin=aligned?null:normMap(text);
+  const cut=index=>aligned?index:(origin[Math.min(index,origin.length-1)]??text.length);
+  let start=cut(Math.max(0,at-120));
+  let end=cut(Math.min(textNorm.length,at+160));
+  if(start>0){
+    const space=text.lastIndexOf(' ',start+12);
+    if(space>0&&space<end) start=space+1;
+  }
+  if(end<text.length){
+    const space=text.indexOf(' ',end);
+    if(space!==-1) end=space;
+  }
+  let out=text.slice(start,end).trim();
+  if(start>0) out='...'+out;
+  if(end<text.length) out+='...';
+  return out;
+}
+function statusText(count){
+  if(count===0) return 'Busca concluída, nenhum resultado encontrado para esta consulta.';
+  if(count===1) return 'Busca concluída, encontrado 1 resultado para esta consulta.';
+  return 'Busca concluída, encontrados '+count+' resultados para esta consulta.';
+}
+function rank(item,words,phrase){
+  let score=0;
+  if(words.every(word=>item.titleNorm.includes(word))) score+=100;
+  if(words.length>1&&item.titleNorm.includes(phrase)) score+=40;
+  if(item.endpointNorm&&words.every(word=>item.endpointNorm.includes(word))) score+=25;
+  return score;
+}
+function render(hits,words){
+  const frag=document.createDocumentFragment();
+  for(const hit of hits){
+    const item=document.createElement('article');
+    item.className='search-hit';
+    const link=document.createElement('a');
+    link.href='#'+hit.id;
+    link.textContent=hit.title;
+    const excerpt=document.createElement('p');
+    excerpt.textContent=snippet(hit.text,hit.textNorm,words);
+    item.append(link,excerpt);
+    frag.append(item);
+  }
+  listEl.replaceChildren(frag);
+}
+function clearSearch(){
+  searchGen++;
+  input.value='';
+  document.body.classList.remove('searching');
+  statusEl.textContent='';
+  listEl.replaceChildren();
+  result.textContent='';
+}
+function reveal(){
+  const id=decodeURIComponent(location.hash.slice(1));
+  if(!id) return;
+  const wasSearching=document.body.classList.contains('searching');
+  if(wasSearching) clearSearch();
+  const target=document.getElementById(id);
+  if(!target) return;
+  target.classList.remove('hidden');
+  for(let parent=target.parentElement;parent;parent=parent.parentElement){
+    if(parent.tagName==='DETAILS') parent.open=true;
+  }
+  if(wasSearching) target.scrollIntoView();
+}
+function showResults(force){
+  const asideFixed=getComputedStyle(document.querySelector('aside')).position==='fixed';
+  if(force||asideFixed) document.getElementById('search-results').scrollIntoView({block:'start'});
+}
+function filter(forceScroll){
+  const gen=++searchGen;
+  const query=fold(input.value.trim());
+  if(!query){
+    clearSearch();
+    return;
+  }
+  document.body.classList.add('searching');
+  const run=()=>{
+    if(gen!==searchGen) return;
+    const words=query.split(/\s+/).filter(Boolean);
+    const phrase=words.join(' ');
+    const hits=buildCatalog().filter(item=>words.every(word=>item.searchNorm.includes(word)));
+    hits.sort((a,b)=>rank(b,words,phrase)-rank(a,words,phrase)||a.order-b.order);
+    if(gen!==searchGen) return;
+    statusEl.textContent=statusText(hits.length);
+    result.textContent=hits.length===1?'1 resultado':hits.length+' resultados';
+    render(hits,words);
+    showResults(forceScroll);
+  };
+  if(!catalog){
+    statusEl.textContent='Buscando…';
+    result.textContent='';
+    setTimeout(run,0);
+  }else run();
+}
+input.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>filter(false),180);});
+input.addEventListener('keydown',event=>{
+  if(event.key==='Enter'){event.preventDefault();clearTimeout(timer);filter(true);}
+  else if(event.key==='Escape'){clearTimeout(timer);clearSearch();}
+});
+listEl.addEventListener('click',event=>{
+  const link=event.target.closest('a[href^="#"]');
+  if(!link) return;
+  event.preventDefault();
+  const id=decodeURIComponent(link.hash.slice(1));
+  const same=decodeURIComponent(location.hash.slice(1))===id;
+  clearSearch();
+  if(same){
+    reveal();
+    document.getElementById(id)?.scrollIntoView();
+    return;
+  }
+  location.hash=id;
+});
+function expandAll(state){document.querySelectorAll('details').forEach(detail=>detail.open=state);}
+window.addEventListener('hashchange',reveal);
+reveal();
+function printBook(){clearSearch();expandAll(true);window.print();}
 </script></body></html>
